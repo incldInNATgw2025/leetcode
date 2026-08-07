@@ -1,11 +1,11 @@
 class Solution:
-    def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         A, B = nums1, nums2
         total = len(nums1) + len(nums2)
 
         half = total // 2
 
-        if len(B) < len(A)
+        if len(B) < len(A):
             A, B = B, A
         l, r = 0, len(A) - 1
 
@@ -25,4 +25,4 @@ class Solution:
             elif Aleft > Bright:
                 r = i - 1
             else:
-               l = i +
+                l = i + 1
